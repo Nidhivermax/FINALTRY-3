@@ -1,6 +1,8 @@
-// services/bhoj/receipt/page.tsx
 "use client";
+
 import { useSearchParams, useRouter } from "next/navigation";
+
+export const dynamic = "force-dynamic"; // Force dynamic rendering
 
 export default function ReceiptPage() {
   const searchParams = useSearchParams();
@@ -12,7 +14,6 @@ export default function ReceiptPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
       <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md border border-gray-200">
-        
         {/* Header */}
         <div className="bg-gradient-to-r from-red-800 to-red-600 text-white p-4 rounded-xl mb-6">
           <h1 className="text-2xl font-bold text-center">Pind Daan Bhoj Receipt</h1>
